@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Ekanomik Kalendar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="economic_calendar">Economic Calendar</string>
+    <string name="yuklanmoqda">Yuklanmoqda...</string>
+    <string name="internet_aloqasi_mavjud_emas">Internet aloqasi mavjud emas</string>
+    <string name="internet_aloqasi_mavjud_emas_qayta_ulanish_tekshirilmoqda">internet_aloqasi_mavjud emas.Qayta ulanish tekshirilmoqda...</string>
+    <string name="yopish">Yopish</string>
+</resources>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0b1016"
+    tools:context=".Main_fragment">
+
+    <TextView
+        android:id="@+id/theme_"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#0b1016"
+        android:text="@string/economic_calendar"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        tools:ignore="RtlSymmetry">
+
+    </TextView>
+    <TextView
+        android:id="@+id/soat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        >
+
+    </TextView>
+    <RelativeLayout
+        android:id="@+id/clock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/theme_"
+        android:gravity="center"
+
+        >
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/control_l"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/clock"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/kecha_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#2a3139"
+            android:text="Kecha"
+            android:textColor="#949494"
+
+            tools:ignore="HardcodedText,TextContrastCheck,TouchTargetSizeCheck">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bugun_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#2a3139"
+            android:text="Bugun"
+            android:textColor="@color/white"
+
+            tools:ignore="HardcodedText,TouchTargetSizeCheck">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ertaga_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#2a3139"
+            android:text="Ertaga"
+            android:textColor="#949494"
+
+            tools:ignore="HardcodedText,TextContrastCheck,TouchTargetSizeCheck">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/hafta_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#2a3139"
+            android:text="haftalik"
+            android:textColor="#949494"
+
+            tools:ignore="HardcodedText,TextContrastCheck,TouchTargetSizeCheck">
+
+        </androidx.appcompat.widget.AppCompatButton>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/control_l"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        >
+        <RelativeLayout
+            android:id="@+id/kecha_l"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            >
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:fillViewport="true"
+                tools:ignore="SpeakableTextPresentCheck,UselessLeaf,UselessParent">
+
+                <LinearLayout
+                    android:id="@+id/linear_kecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    >
+
+                </LinearLayout>
+
+            </ScrollView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/bugun_l"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            >
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:fillViewport="true"
+                tools:ignore="SpeakableTextPresentCheck,UselessLeaf,UselessParent">
+
+                <LinearLayout
+                    android:id="@+id/linear_bugun"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    >
+
+                </LinearLayout>
+
+            </ScrollView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/ertaga_l"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            >
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:fillViewport="true"
+                tools:ignore="SpeakableTextPresentCheck,UselessLeaf,UselessParent">
+
+                <LinearLayout
+                    android:id="@+id/linear_ertaga"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    >
+
+                </LinearLayout>
+
+            </ScrollView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/haftalik_l"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            >
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:fillViewport="true"
+                tools:ignore="SpeakableTextPresentCheck,UselessLeaf,UselessParent">
+
+                <LinearLayout
+                    android:id="@+id/linear_haftalik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    >
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

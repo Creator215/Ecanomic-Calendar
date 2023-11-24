@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1e252b"
+    android:gravity="center"
+    tools:context=".No_connect_fragment">
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Internet aloqasi mavjud emas.Aloqani tekshirib qayta urunib ko'ring"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        >
+
+    </TextView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/reflesh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/info"
+        android:layout_marginTop="15dp"
+        android:background="#ffff00"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="@string/yopish"
+        android:padding = "10dp"
+        android:textSize="16sp"
+        >
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+</RelativeLayout>
